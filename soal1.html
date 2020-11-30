@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Click The Button!</h1>
+    </div>
+    <br>
+    <div>
+        <button onclick="type1()"> Type 1</button>
+        <button onclick="type2()"> Type 2</button>
+    </div>
+</body>
+
+<script>
+    function type1 (){
+        var output;
+        for (var i = 4; i < 6; i++) {
+            output += "* \n";
+        }
+        for (var j = 3; j < 4; j++) {
+            output += "#";
+        }
+        for (var k = 2; k < 3; k++) {
+            output += "@";
+        }
+        for (var m = 1; m < 2; m++) {
+            output += "*";
+        }
+        for (var m = 0; m < 1; m++) {
+            output += "#";
+        }
+        output += "<br>"
+    }
+    
+    function type2 (){
+        var output;
+        for (var i = 3 % 2 === 0; i < 6; i++) {
+            output += "* \n";
+        }
+        for (var j =  4 % 2 === 0; j < 4; j++) {
+            output += "#";
+        }
+        output += "<br>"
+    }
+</script>
+</html>
